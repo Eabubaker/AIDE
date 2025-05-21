@@ -145,4 +145,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ---
 
 **Join the Journey!**  
-Follow along on [LinkedIn](www.linkedin.com/in/eabubaker) for daily updates on building AIDE. Let’s create a smarter auditing future together! 🚀
+Follow along on [LinkedIn](https://www.linkedin.com/in/eabubaker) for daily updates on building AIDE. Let’s create a smarter auditing future together! 🚀
+
