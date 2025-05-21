@@ -5,7 +5,7 @@
 
 <p align="center">
   <span style="background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-    <strong>Prepared by <a href="www.linkedin.com/in/eabubaker"> Emad Abubaker</a></strong>
+    <strong>Prepared by <a href="www.linkedin.com/in/eabubaker"> @Emad Abubaker</a></strong>
   </span>
 </p>
 
