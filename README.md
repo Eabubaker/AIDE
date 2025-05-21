@@ -1,53 +1,131 @@
-# ✨AIDE✨
+AIDE - Audit Intelligence & Document Explorer
+Prepared by @Emad Abubaker
+Welcome to AIDE, an open-source AI-powered assistant designed to revolutionize internal auditing. AIDE enables auditors to query complex company documents (e.g., policies, procedures, contracts, and Global Internal Audit Standards) and receive accurate, context-aware, source-referenced answers in seconds. Powered by Retrieval-Augmented Generation (RAG), AIDE streamlines auditing tasks for professionals, even those without deep technical expertise.
+This README.md guides you through Day 1 of building AIDE, where we set up the development environment on a Windows system and lay the foundation for our smart assistant.
+Project Overview
+AIDE (Audit Intelligence & Document Explorer) aims to:
+
+Provide a user-friendly interface for auditors to ask questions about company documents.
+Deliver precise, context-aware answers with source references.
+Leverage open-source tools to make auditing smarter and more efficient.
+
+The project is structured in 3 phases:
+
+Data Preparation: Building a knowledge base from documents.
+AI Integration: Connecting a language model to process queries.
+Interface Design: Creating an interactive user interface.
+
+Day 1: Setting the Stage & Building the Foundation
+Today, we focus on:
+
+Installing the necessary tools to build AIDE.
+Setting up the environment to create the first visual component of our assistant.
+
+This is the "foundation" for AIDE’s intelligent interface, where auditors will interact with the system.
+Prerequisites
+Ensure the following are installed on your Windows machine:
+
+Python 3.8+:
+
+Download from python.org.
+Check "Add Python to PATH" during installation.
+Verify with:python --version
 
 
----
 
-<p align="center">
-  <span style="background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-    <strong>Prepared by <a href="www.linkedin.com/in/eabubaker"> @Emad Abubaker</a></strong>
-  </span>
-</p>
 
-# AIDE - Audit Intelligence & Document Explorer
-## Day 1: Setting the Stage & Our First "Hello AIDE!"
+Pip (Python Package Installer):
 
-Welcome to Day 1 of building AIDE! Today, our goal is to set up our basic toolkit and create the very first visual part of our application. We'll be using **Streamlit**, a fantastic Python library that lets us build web apps easily.
+Included with Python. Update to the latest version:python -m pip install --upgrade pip
 
-Think of today as laying the foundation for our smart assistant's "face".
 
-### Prerequisites
-* Python 3.8+ installed.
-* Pip (Python package installer) installed.
 
-### Setup
-1.  Create a project directory (e.g., `aide_project`).
-2.  Inside the project directory, create a new Python file, for example, `app.py`.
-3.  Install Streamlit:
-    ```bash
-    pip install streamlit
-    ```
 
-### Code (`app.py`)
-```python
-import streamlit as st
+Git (optional, for cloning the repository):
 
-def main():
-    st.set_page_config(page_title="AIDE - Audit Assistant", layout="wide")
+Download from git-scm.com.
+Verify with:git --version
 
-    st.title("🚀 AIDE - Audit Intelligence & Document Explorer")
-    st.subheader("Welcome! Let's build our smart assistant for auditors, step by step.")
 
-    st.sidebar.success("Navigation")
-    st.sidebar.info("We are on Day 1: Setup!")
 
-    st.write("""
-    This is the beginning of our AIDE application.
-    Over the next few days, we will add functionalities like:
-    - Document loading
-    - Text processing
-    - AI-powered Q&A
-    """)
 
-if __name__ == "__main__":
-    main()
+
+Installation Steps
+
+Clone the AIDE Repository:
+git clone https://github.com/Eabubaker/AIDE.git
+cd AIDE
+
+
+Create a Virtual Environment (recommended):
+python -m venv aide_env
+.\aide_env\Scripts\activate
+
+
+Install Required Packages:
+
+The project requires the following Python packages (listed in requirements.txt):
+streamlit==1.29.0
+langchain==0.1.17
+langchain-community==0.0.23
+sentence-transformers==2.2.0
+deepseek==0.1.0
+chromadb==0.4.16
+tqdm==4.66.1
+truststore==0.3.3
+
+
+Install them using:
+pip install -r requirements.txt
+
+
+If issues arise, ensure pip is updated:
+python -m pip install --upgrade -r requirements.txt
+
+
+
+
+
+Testing Your Setup
+
+Create a simple Python script (e.g., app.py) to verify the environment:
+print("Hello, AIDE! Your auditing assistant is ready to grow.")
+
+
+Run the script:
+python app.py
+
+
+
+This confirms that Python and the required packages are installed correctly. In the next steps, we’ll build AIDE’s interface and knowledge base.
+Troubleshooting
+
+Python not found: Reinstall Python and ensure "Add to PATH" is checked.
+Pip errors: Update pip using python -m pip install --upgrade pip.
+Package conflicts: Use a clean virtual environment to avoid conflicts.
+
+Project Structure
+AIDE/
+├── aide_env/              # Virtual environment
+├── app.py                 # Main application script
+├── requirements.txt       # List of required packages
+├── README.md              # Project documentation
+└── LICENSE                # MIT License file
+
+Next Steps
+Follow the upcoming phases:
+
+Day 2: Collect and organize documents to build AIDE’s knowledge base.
+Day 3: Integrate an AI model to process and answer queries.
+Day 4: Design an interactive interface for auditors.
+
+Check the GitHub repository for updates and detailed guides.
+Contributing
+AIDE is open-source, and we welcome contributions! To contribute:
+
+
+Your feedback and ideas will help make AIDE a powerful tool for the auditing community!
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Join the Journey!Follow along on LinkedIn for updates on building AIDE. Let’s create a smarter auditing future together! 🚀
